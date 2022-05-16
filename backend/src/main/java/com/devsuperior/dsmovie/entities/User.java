@@ -8,21 +8,17 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "tb_user")
-
-
 public class User {
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	
 	private Long id;
 	private String email;
 	
 	public User() {
-		
 	}
 
 	public User(Long id, String email) {
-		super();
 		this.id = id;
 		this.email = email;
 	}
@@ -42,7 +38,4 @@ public class User {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	
-	
-
 }
